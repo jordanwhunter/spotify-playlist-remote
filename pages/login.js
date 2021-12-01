@@ -5,7 +5,13 @@ import { getProviders, signIn } from 'next-auth/react';
 const Login = ({ providers }) => { // Providers destructured from props
   return (
     <div>
-      <h1>Login Page</h1>
+      <img className='w-52 mb-5' src='https://links.papareact.com/9xl' alt='Spotify Logo' />
+
+      {Object.values(providers).map((provider) => (
+        <div>
+          <button>Log in with {provider.name}</button>
+        </div>
+      ))}
     </div>
   );
 };
