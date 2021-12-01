@@ -8,16 +8,17 @@ import { HomeIcon, SearchIcon, LibraryIcon, PlusCircleIcon } from '@heroicons/re
 const Sidebar = () => {
   return (
     <div>
-      <button>
+      {/* option + click = multicursor */}
+      <button className='flex items-center space-x-2 hover:text-white'>
         {/* Height and width are required in Tailwind to show buttons */}
         <HomeIcon className='h-5 w-5' />
         <p>Home</p>
       </button>
-      <button>
+      <button className='flex items-center space-x-2 hover:text-white'>
         <SearchIcon className='h-5 w-5' />
         <p>Search</p>
       </button>
-      <button>
+      <button className='flex items-center space-x-2 hover:text-white'>
         <LibraryIcon className='h-5 w-5' />
         <p>Your Library</p>
       </button>
